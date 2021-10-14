@@ -1,0 +1,51 @@
+
+
+.parent{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(34, 32, 32, 0.7); 
+    display: block;
+}
+
+.child{
+    width:500px;
+    height: auto;
+    margin-left: 38%;
+    margin-top: 8%;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.scroll{
+    width:500px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.btns{
+    margin: 10px 8px;
+}
+
+.title{
+    padding: 15px 10px;
+    background-color: tomato;
+    color: white;
+}
+
+.error{
+    /* margin-top: 25px;
+    margin-left: 50px; */
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    opacity: 0.7;
+    color: rgb(197, 194, 194);
+  }
+
+ p{
+     font-weight: bold;
+ }

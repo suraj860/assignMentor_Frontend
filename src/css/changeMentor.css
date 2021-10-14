@@ -1,0 +1,57 @@
+
+
+.chng {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(34, 32, 32, 0.7);
+  display: block;
+ 
+}
+
+.child2{
+width:500px;
+background-color: white;
+margin-left: 38%;
+margin-top: 3%;
+border-radius: 1rem;
+border: 1px solid #629ef8;
+overflow: hidden;
+}
+
+.assignStud{
+    width:500px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.mentInfo{
+  padding-left: 15px;
+  padding-top: 15px;
+  /* font-family: 'Nunito', sans-serif; */
+}
+
+.btns{
+  margin: 10px 8px ;
+}
+
+.title1, .title2{
+   background-color: #629ef8;
+   color: white;
+   padding: 10px 20px;
+}
+
+h4{
+  margin-bottom: 0;
+}
+
+
+.error{
+  margin-top: 25px;
+  margin-left: 50px;
+  font-weight: bolder;
+  opacity: 0.7;
+  color: rgb(197, 194, 194);
+}
