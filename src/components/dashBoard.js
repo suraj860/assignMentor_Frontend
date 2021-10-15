@@ -16,11 +16,14 @@ function Dash(){
 
     // initially getting all the mentor data
    
-        async function getData(){
-            const response = await axios("https://assignmentor68.herokuapp.com/mentors")
-            setAllMent(response.data)
-        }
-        getData()
+     React.useEffect(()=>{
+    async function getData(){
+        const response = await axios("https://assignmentor68.herokuapp.com/mentors")
+        setAllMent(response.data)
+    }
+    getData()
+     // eslint-disable-next-line react-hooks/exhaustive-deps
+   },[])
     
 
     function assignStudent(value){
