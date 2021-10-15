@@ -13,17 +13,19 @@ function Allstudents(){
 
     const number = getStud.length;
     //getting all the student information with this api call
-    async function getStudent(){
-      try{
-        const {data} = await axios.get("https://assignmentor68.herokuapp.com/students");
-        setStud(data)
+     React.useEffect(()=>{
+      async function getStudent(){
+        try{
+          const {data} = await axios.get("https://assignmentor68.herokuapp.com/students");
+          setStud(data)
+        }
+        catch(error){
+          console.log(error)
+        }
       }
-      catch(error){
-        console.log(error)
-      }
-    }
-   
-        getStudent()
+          getStudent()
+       // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
    
 
     //assigneing a student to the mentor with this put api call
